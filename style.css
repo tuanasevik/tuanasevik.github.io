@@ -1,0 +1,115 @@
+/* stylesheet of dictionaryAPI */
+/* Tuana Sevik 2BHTIM */
+
+/* general */
+@font-face {
+    font-family: CenturyGothic;
+    src: url("./CenturyGothic.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: CenturyGothic;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+header {
+    text-align: center;
+    padding:2%;
+    background-color: #000757;
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+    letter-spacing: 0.3em;
+}
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+/* texts */
+h2 {
+    margin-bottom: 2vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+h3 {
+    margin-top: 2vw;
+    margin-bottom: 0.5vw;
+    margin-left: 30.5vw;
+}
+span {
+    text-transform: capitalize;
+}
+
+/* list */
+ul, ol {
+    margin-left: 30vw;
+} 
+ol li {
+    text-transform: capitalize;
+    text-align: left;
+    padding-bottom: 1vw;
+}
+ul li {
+    text-transform: capitalize;
+    text-align: left;
+    list-style-type: circle;
+    padding-bottom: 1vw;
+    transition: color 0.5s;
+}
+ul li:hover {
+    cursor: pointer;
+    color:rgba(0,7,87,0.6);
+}
+
+/* form */
+#form_box {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.2em solid #00053d;
+    border-top: none;
+    border-bottom: none;
+    padding: 2%;
+    box-shadow: 0.2em 0.5em 0.8em 0em rgba(0,5,61,0.5);
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 5vw;
+}
+form input[type=text], form select {
+    margin-right: 2.4vw;
+}
+
+/* button */
+button {
+    background-color: #000757;
+    color: white;
+    border: 0;
+    border-radius: 0.2em;
+    padding: 1%;
+    cursor: pointer;
+    margin-top: 1.5vw;
+    transition: background-color 0.5s;
+} 
+button:hover {
+    background-color: rgba(0,7,87,0.6);
+}
+
+/* other */
+.flex {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4vw;
+    margin-top: 1vw;
+}
+#audio {
+    font-size: 1.2em;
+}
