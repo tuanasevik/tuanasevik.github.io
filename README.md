@@ -1,1 +1,0 @@
-# tuanasevik.github.io
