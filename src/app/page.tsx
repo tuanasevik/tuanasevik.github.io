@@ -104,7 +104,7 @@ export default function Home() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [sections.length]);
 
   // Custom cursor effects
   useEffect(() => {
@@ -547,8 +547,8 @@ export default function Home() {
           <div>
             <h2 className="text-5xl md:text-6xl font-bold gradient-text heading-font" style={{ marginBottom: '1.5rem' }}>About Me</h2>
             <p className="text-base text-muted leading-relaxed" style={{ marginBottom: '0.75rem' }}>
-            I'm a creative software developer who loves blending logic with imagination to bring 
-            ideas to life. With a strong background in IT-Mediatechnology (HTL Leonding, graduated 2025) and experience in areas from robotics to game development, and I'm always eager to explore the latest tech trends.
+            I&apos;m a creative software developer who loves blending logic with imagination to bring 
+            ideas to life. With a strong background in IT-Mediatechnology (HTL Leonding, graduated 2025) and experience in areas from robotics to game development, and I&apos;m always eager to explore the latest tech trends.
             </p>
             <p className="text-base text-muted leading-relaxed" style={{ marginBottom: '1.5rem' }}>
             I enjoy challenges like the Advent of Code, and outside of coding I find inspiration in 
@@ -777,9 +777,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 h-full flex flex-col">
           {/* Main Content - Centered */}
           <div className="flex-1 flex flex-col justify-center text-center">
-            <h2 className="text-4xl md:text-5xl font-bold gradient-text heading-font" style={{ marginBottom: '3rem' }}>Let's Connect</h2>
+            <h2 className="text-4xl md:text-5xl font-bold gradient-text heading-font" style={{ marginBottom: '3rem' }}>Let&apos;s Connect</h2>
               <p className="text-xl text-muted max-w-3xl mx-auto leading-relaxed" style={{ marginBottom: '3rem' }}>
-                Ready to discuss exciting projects and opportunities. Let's connect and explore how we can work together to create something meaningful.
+                Ready to discuss exciting projects and opportunities. Let&apos;s connect and explore how we can work together to create something meaningful.
               </p>
             
             <div className="contact-buttons flex flex-col sm:flex-row gap-6 justify-center">
