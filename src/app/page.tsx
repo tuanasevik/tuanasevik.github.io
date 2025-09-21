@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import OptimizedImage from '../components/OptimizedImage';
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -338,62 +339,72 @@ export default function Home() {
                     {/* Duplicate images for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/RealFlare_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/RealFlare_Sevik.webp" 
                           alt="Tuana Sevik - Creative Work" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          priority={true}
+                          quality={80}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/HDR_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/HDR_Sevik.webp" 
                           alt="HDR Photography" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/fokus_stacking_sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/fokus_stacking_sevik.webp" 
                           alt="Focus Stacking Photography" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload2SS_04.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload2SS_04.webp" 
                           alt="Workload Screenshot 2" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
                     {/* Duplicate for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/RealFlare_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/RealFlare_Sevik.webp" 
                           alt="Tuana Sevik - Creative Work" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          priority={true}
+                          quality={80}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/HDR_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/HDR_Sevik.webp" 
                           alt="HDR Photography" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/fokus_stacking_sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/fokus_stacking_sevik.webp" 
                           alt="Focus Stacking Photography" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload2SS_04.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload2SS_04.webp" 
                           alt="Workload Screenshot 2" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
@@ -406,62 +417,70 @@ export default function Home() {
                     {/* Duplicate images for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload1SS_01.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload1SS_01.webp" 
                           alt="Workload Screenshot 1" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_6.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_6.webp" 
                           alt="Best of Photography" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_8.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_8.webp" 
                           alt="Best of Photography 2" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload2SS_05.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload2SS_05.webp" 
                           alt="Workload Screenshot 4" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
                     {/* Duplicate for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload1SS_01.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload1SS_01.webp" 
                           alt="Workload Screenshot 1" 
-                          className="w-full h-full object-cover rounded-2xl"
+                          className="w-full h-full rounded-2xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_6.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_6.webp" 
                           alt="Best of Photography" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_8.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_8.webp" 
                           alt="Best of Photography 2" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload2SS_05.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload2SS_05.webp" 
                           alt="Workload Screenshot 4" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
@@ -474,62 +493,70 @@ export default function Home() {
                     {/* Duplicate images for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload3SS_01.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload3SS_01.webp" 
                           alt="Workload Screenshot 3" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload3SS_02.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload3SS_02.webp" 
                           alt="Workload Screenshot 5" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/RenderedFlare_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/RenderedFlare_Sevik.webp" 
                           alt="Rendered Flare" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_9.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_9.webp" 
                           alt="Best of Photography 3" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
                     {/* Duplicate for seamless loop */}
                     <div className="flex flex-col gap-8 w-full">
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload3SS_01.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload3SS_01.webp" 
                           alt="Workload Screenshot 3" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/Sevik_Workload3SS_02.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/Sevik_Workload3SS_02.webp" 
                           alt="Workload Screenshot 5" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/RenderedFlare_Sevik.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/RenderedFlare_Sevik.webp" 
                           alt="Rendered Flare" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                       <div className="w-full h-64 gallery-image">
-                        <img 
-                          src="/img/hero-page/bestof_9.jpg" 
+                        <OptimizedImage 
+                          src="/img-optimized/hero-page/bestof_9.webp" 
                           alt="Best of Photography 3" 
-                          className="w-full h-full object-cover rounded-xl"
+                          className="w-full h-full rounded-xl"
+                          quality={75}
                         />
                       </div>
                     </div>
@@ -589,10 +616,11 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <img 
-              src="/img/about-page/about2.jpeg" 
+            <OptimizedImage 
+              src="/img-optimized/about-page/about2.webp" 
               alt="Tuana Sevik" 
-              className="w-full h-96 object-cover rounded-3xl shadow-2xl hover-glow interactive-element"
+              className="w-full h-96 rounded-3xl shadow-2xl hover-glow interactive-element"
+              quality={85}
             />
             <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-gradient-to-br from-primary to-accent rounded-full shadow-lg flex items-center justify-center hover-scale interactive-element">
               <span className="text-4xl">🌿</span>
@@ -624,10 +652,11 @@ export default function Home() {
                     controls
                   />
                 ) : (
-                  <img
-                    src={projects[currentProject].image}
+                  <OptimizedImage
+                    src={projects[currentProject].image.replace('/img/', '/img-optimized/').replace(/\.(jpg|jpeg|png)$/i, '.webp')}
                     alt={projects[currentProject].title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full"
+                    quality={85}
                   />
                 )}
                 
@@ -706,10 +735,11 @@ export default function Home() {
                     <div>
                            <div className="rounded-lg shadow-2xl" style={{ padding: '1rem 1rem 2rem 1rem', height: '420px', width: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', backgroundColor: '#f5f1e8' }}>
                         <div className="w-full h-80 overflow-hidden rounded-sm mb-3">
-                          <img
-                            src={destination.image}
+                          <OptimizedImage
+                            src={destination.image.replace('/img/', '/img-optimized/').replace(/\.(jpg|jpeg|png)$/i, '.webp')}
                             alt={destination.name}
-                            className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                            className="w-full h-full hover:scale-110 transition-transform duration-300"
+                            quality={80}
                           />
                         </div>
                              <h3 className="text-4xl font-semibold text-gray-800 text-center" style={{ fontFamily: 'var(--font-permanent-marker)', fontStyle: 'italic', marginTop: 'auto' }}>{destination.name}</h3>
